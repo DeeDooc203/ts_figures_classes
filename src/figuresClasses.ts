@@ -1,4 +1,4 @@
-export type Shape = 'trianle' | 'circle' | 'rectangle';
+export type Shape = 'triangle' | 'circle' | 'rectangle';
 export type Color = 'red' | 'green' | 'blue';
 
 export interface Figure {
@@ -18,7 +18,7 @@ function typeError(...values: number[]): void {
 }
 
 export class Triangle implements Figure {
-  shape: Shape = 'trianle';
+  shape: Shape = 'triangle';
 
   constructor(
     public color: Color,
